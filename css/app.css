@@ -1,0 +1,110 @@
+body {
+  background-color: black;
+  color:white;
+  text-align: center;
+  font-family: cursive;
+}
+
+.main-container {
+  position: relative;
+}
+
+.board-container {
+  margin: auto;
+}
+
+.cell {
+  font-size: 1.5em;
+}
+
+img {
+  width: 50px;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 50px 50px;
+  background-color: rgb(255, 248, 248);
+  width: 300px;
+  height: 150px;
+  border: 5px solid green;
+  border-radius: 50px;
+}
+
+.modal h1 {
+  font-size: 50px;
+  color: green;
+}
+
+.modal button {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.food {
+  margin: auto;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px #fff;
+}
+
+.wall {
+  margin: auto;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 5px;
+  border: 1px solid blue;
+  box-shadow: 0 0 10px 5px #200ae3c6;
+}
+
+.power-food {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px 5px #fff;
+  animation: glowing 2s infinite;
+}
+
+.restart-btn {
+  margin-top: 1em;
+  padding: 5px;
+  cursor: pointer;
+  width: 200px;
+  letter-spacing: 2px;
+  font-family: cursive;
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: bold;
+  transition: .2s;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.restart-btn:hover {
+  margin-top: 0.7em;
+  width: 270px;
+  font-size: 25px;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px 5px #fff;
+  }
+  50% {
+    box-shadow: 0 0 20px 10px #00e6e6;
+  }
+  100% {
+    box-shadow: 0 0 10px 5px #fff;
+  }
+}
